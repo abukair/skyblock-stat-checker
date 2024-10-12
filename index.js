@@ -3,7 +3,7 @@
 register("command", (arg, arg2) => {
     argument = arg;
     // Check if both arguments are provided
-    ifssss (argument) {
+    if (argument) {
         let link = `https://sky.shiiyu.moe/stats/${argument}`;
         // Send the link to the player client-side
         ChatLib.chat(link);
